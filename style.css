@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    padding: 30px 40px;
+}
+
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 50px 0 0 50px;
+    border: 2px solid #80deea;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-form input:focus {
+    border-color: #dac826;
+    box-shadow: 0 0 10px rgba(38,198,218,0.3);
+}
+
+.search-form button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #26da92;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search-form button:hover {
+    background-color: #0047c1;
+    transform: scale(1.05);
+}
+
+
+.card {
+    background-color: #f7f9fc;
+    border-left: 6px solid #26da92;
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+
+.property {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.property span:first-child {
+    font-weight: 600;
+    color: #1b262c;
+}
+
+.property span:last-child {
+    color: #495867;
+}
+
+
+.property span:last-child audio {
+    outline: none;
+    cursor: pointer;
+}
+
+
+.property span:last-child.example {
+    font-style: italic;
+    color: #778da9;
+}
+
+
+.property span:last-child.part-of-speech {
+    background-color: #80deea;
+    color: #1b262c;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
